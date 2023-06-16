@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body style="background-color: grey;">
+    <div class="container">
+        <form>
+            <div class="text-center">
+                <!-- {{user_name}} -->
+                <div class="form-group">
+                    <label for="sno" style="color: pink;">Sno:</label>
+                    <input type="number" class="form-control" name="sno" value="{{sno}}" placeholder="Sno" required>
+                </div>
+                <div class="form-group">
+                    <label for="company_name" style="color: pink;">Company Name:</label>
+                    <input type="text" class="form-control" name="company_name" value="{{company_name}}" placeholder="Company Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="ram" style="color: pink;">RAM:</label>
+                    <input type="text" class="form-control" name="ram" value="{{ram}}" placeholder="RAM" required>
+                </div>
+                <div class="form-group">
+                    <label for="rom" style="color: pink;">ROM:</label>
+                    <input type="text" class="form-control" name="rom" value="{{rom}}" placeholder="ROM" required>
+                </div>
+                <div class="form-group">
+                    <label for="model_name" style="color: pink;">Model Name:</label>
+                    <input type="text" class="form-control" name="model_name" value="{{model_name}}" placeholder="Model Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="price" style="color: pink;">Price:</label>
+                    <input type="number" class="form-control" name="price" value="{{price}}" placeholder="Price" required>
+                </div>
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </form>
+
+        <center>
+            <a href="/laptopapp/retrieve" class="btn btn-primary mt-5"><h2>check Data</h2></a>
+         </center>
+        <br>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
